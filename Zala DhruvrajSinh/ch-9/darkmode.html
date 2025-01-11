@@ -1,0 +1,19 @@
+<html>
+    <script>
+        function f1(){
+            var bid = document.getElementById("b1");
+            var button = document.querySelector("button");
+            if (bid.style.backgroundColor === "black") {
+                bid.style.backgroundColor = "white";  
+                button.textContent = "Dark Mode";  
+            } else {
+                bid.style.backgroundColor = "black"; 
+                button.style.backgroundColor = "white";
+                button.textContent = "Light Mode";  
+            }
+        }
+    </script>
+    <body id="b1">
+        <button onclick="f1()">Dark Mode</button>
+    </body>
+</html>

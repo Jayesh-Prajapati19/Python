@@ -1,0 +1,27 @@
+<html>
+<script>
+    // Function triggered on keydown
+    function f1() {
+        // Change background color to blue
+        document.body.style.backgroundColor = 'blue';
+
+        // Start the audio playback
+        document.getElementById("a1").play();
+    }
+
+    // Function triggered on keyup
+    function f2() {
+        // Change background color to red
+        document.body.style.backgroundColor = 'red';
+
+        // Pause the audio playback
+        document.getElementById("a1").pause();
+    }
+</script>
+
+<body onkeydown="f1()" onkeyup="f2()">
+    <!-- Audio element with a predefined source -->
+    <audio id="a1" src="siren.mp3" controls></audio>
+</body>
+
+</html>

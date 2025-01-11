@@ -1,0 +1,22 @@
+<!-- write a js prog to know which mouse key is clicked left,right or middle -->
+ <html>
+    <script>
+        function f1(e){
+            val=e.button;
+            switch(val){
+                case 0:
+                alert("left click");
+                break;
+                case 2:
+                alert("right click");
+                break;
+                case 1:
+                alert("middle click");
+                break;
+            }
+        }
+    </script>
+    <body>
+        <div style="height:500px;width:400px;background-color:yellow;" onmousedown="f1(event)"></div>
+    </body>
+ </html>
