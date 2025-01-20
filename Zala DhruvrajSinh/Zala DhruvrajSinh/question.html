@@ -1,0 +1,24 @@
+<!-- Design a login form using js, in whihc the password field in your form has minimum length of 8 letters
+ and it must have some special characters  -->
+ <html>
+    <head>
+        <script>
+            function f1(){
+                pat=/\W/;
+                u=document.getElementById("p1").value;
+                if(u.length>8 && pat.test(u)){
+                    alert("Valid");
+                }
+                else{
+                    alert("Invalid");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="#">
+            <input type="password" id="p1">
+            <input type="submit" onclick="f1()">
+        </form>
+    </body>
+ </html>

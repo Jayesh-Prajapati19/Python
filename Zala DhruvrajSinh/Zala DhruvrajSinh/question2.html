@@ -1,0 +1,28 @@
+<!-- Write a js code to validate username and password
+ Password length must be of 6-12 charactters 
+ Username should not start with underscore @ and any number
+ Both must not be blank -->
+<html>
+    <head>
+        <script>
+            function f1(){
+                pat1=/^@|^_|\d/;
+                u=document.getElementById("u1").value;
+                p=document.getElementById("p1").value;
+                if((u.length!=0 && p.length!=0) && pat1.test(u)==false && (p.length>5 && p.length<13)){
+                    alert("Valid");
+                }
+                else{
+                    alert("Invalid");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="#">
+            <input type="text" id="u1">
+            <input type="password" id="p1">
+            <input type="submit" onclick="f1()">
+        </form>
+    </body>
+</html>

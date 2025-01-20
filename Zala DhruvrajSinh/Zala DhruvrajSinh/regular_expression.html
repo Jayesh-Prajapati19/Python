@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            function fun(){
+                // pat=/abc/;
+                // pat=/[abc]/;
+                // pat=/[^abc]/;
+                // pat=/[0-9]/;
+                // pat=/[^0-9]/;
+                pat=/(abc|[0-9])/;
+                u=document.getElementById('t1').value;
+                if(pat.test(u)){
+                    alert('Perfect');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="#">
+            <input type="text" id="t1"/>
+            <input type="submit" onclick="fun()">
+        </form>
+    </body>
+</html>

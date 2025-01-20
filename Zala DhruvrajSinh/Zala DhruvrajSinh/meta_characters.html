@@ -1,0 +1,29 @@
+<html></html>
+    <head>
+        <script>
+            function fun(){
+                // pat=/^A/; //starts with A if we write 'i' after /^A/i then it is case insensitive
+                // pat= /a*/; //zero or more occurance
+                // pat=/b+/; //atleast one time or more
+                // pat=/b$/; //ends with b
+                // pat=/\d/; //[0-9]
+                // pat=/\D/; //[^0-9]
+                // pat=/\w/; //if A-Z,a-z,0-9,_ then true if any other special characters then false
+                // pat=/\W/; //if it has a special characters then it will return true 
+                u=document.getElementById('t1').value;
+                if(pat.test(u)){
+                    alert('Perfect');
+                }
+                else{
+                    alert("Not Perrfect");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="#">
+            <input type="text" id="t1"/>
+            <input type="submit" onclick="fun()">
+        </form>
+    </body>
+</html>
