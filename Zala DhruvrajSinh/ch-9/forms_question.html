@@ -1,0 +1,49 @@
+<html>
+
+<body>
+    <script>
+        function myfunction(id) {
+            var f=id.firstname.value;
+            var l=id.lastname.value;
+            r = document.getElementsByName("gender")
+            var gender1=""
+            for (i = 0; i < r.length; i++) {
+                if (r[i].checked == true) {
+                    gender1 = r[i].value;
+                }
+            }            
+            c = document.getElementsByName("c1");
+            var h1=""
+            if (c[0].checked == true) {
+                h1=c[0].value;
+            }
+            c = document.getElementsByName("c2");
+            var h2=""
+            if (c[0].checked == true) {
+                h2=c[0].value;
+            }
+            document.write(f,l,gender1,h1,h2)
+        }
+    </script>
+
+
+    <form name="f1" action="#" onsubmit="myfunction(this)">
+        Firstname:-
+        <input type="text" name="firstname" placeholder="Enter FirstName" />
+        <br>
+        Lastname:-
+        <input type="text" name="lastname" placeholder="Enter LastName" />
+        <br>
+        Gender:-
+        <input type="radio" name="gender" value="Male"/>Male
+        <input type="radio" name="gender" value="Female"/>Female
+        <br>
+        Sports:-
+        <input type="checkbox" name="c1" value="cricket" />Cricket
+        <input type="checkbox" name="c2" value="football" />Football
+        <br>
+        <input type="submit" value="submit" />
+    </form>
+</body>
+
+</html>

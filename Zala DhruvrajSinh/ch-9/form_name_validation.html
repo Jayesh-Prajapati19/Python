@@ -1,0 +1,21 @@
+<html>
+    <script>
+        function myfunction(id){
+            val=id.t1.value;
+            if(val==""){
+                alert("Please enter your name");
+                return false;
+            }
+            else{
+                alert(val)
+            }
+        }
+    </script>
+    <body>
+        <form name="f1" action="#" onsubmit="return myfunction(this)">
+            <input type="text" maxlength="10" name="t1">
+            <input type="password">
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
