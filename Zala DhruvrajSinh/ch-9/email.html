@@ -1,0 +1,20 @@
+<html>
+    <script>
+        function f1(){
+            pat=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            e=document.getElementById("e1").value;
+            if(pat.test(e)){
+                alert("Perfect");
+            }
+            else{
+                alert("Not Perfect")
+            }
+        }
+    </script>
+    <body>
+        <form action="#">
+            <input type="email" id="e1">
+            <input type="submit" onclick="f1()">
+        </form>
+    </body>
+</html>
