@@ -1,0 +1,34 @@
+<html>
+<script>
+    function isPrime(num) {
+        if (num <= 1) {
+            return false; // 0 and 1 are not prime numbers
+        }
+
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) {
+                return false; // num is divisible by a number other than 1 and itself
+            }
+        }
+        return true; // num is prime
+    }
+
+    function findPrimesInRange(start, end) {
+        let primes = [];
+        for (let i = start; i <= end; i++) {
+            if (isPrime(i)) {
+                primes.push(i);
+            }
+        }
+        return primes;
+    }
+
+    // Example usage:
+    let start = 10;
+    let end = 50;
+    let primeNumbers = findPrimesInRange(start, end);
+    console.log(`Prime numbers between ${start} and ${end}:`, primeNumbers);
+
+</script>
+
+</html>

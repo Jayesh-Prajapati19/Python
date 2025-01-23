@@ -1,0 +1,26 @@
+<!-- write a ES-6 to be called on function calling.With some text and no decoration.take font size and style as default argument and pass background color and text color while passing argument to function style should change on button click -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        const changeStyle = (bgColor, textColor, fontSize = '16px') => {
+            i = document.getElementById('text');
+            i.style.backgroundColor = bgColor;
+            i.style.color = textColor;
+            i.style.fontSize = fontSize;
+            i.style.fontFamily = fontStyle;
+        };
+    </script>
+</head>
+
+<body>
+
+    <div id="text" style="padding: 10px;">
+        This is some text that will change style.
+    </div>
+    <button onclick="changeStyle('blue', 'white')">Change Style</button>
+</body>
+</html>
